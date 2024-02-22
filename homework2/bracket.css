@@ -1,0 +1,144 @@
+/* Bracket */
+body {
+    font-size: small;
+}
+
+h1 {
+    color: purple;
+    text-align: center;
+}
+
+.teamSection.outer h3 {
+    text-align: right;
+}
+
+p {
+    text-align: center;
+}
+
+.bracket {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+/* Teams */
+
+.teamSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.teamBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-width: 2px;
+    border-color: purple;
+    border-style: solid;
+    padding: 2%;
+    width: 150px;
+}
+
+.teamText {
+    flex-grow: 1;
+    width: 50%;
+}
+
+.bracketSection {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section 1 */
+
+.bracketSection1Box {
+    width: 150px;
+    height: 50px;
+    border-width: 2px;
+    border-color: purple;
+    border-style: solid;
+    border-left: none;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.bracketSection1Box:nth-child(2), .bracketSection1BoxOuter:nth-child(2) {
+    margin-top: 160px;
+}
+
+.bracketSection1Box:nth-child(3), .bracketSection1BoxOuter:nth-child(3) {
+    margin-top: 150px;
+}
+.bracketSection1Box:nth-child(4), .bracketSection1BoxOuter:nth-child(4) {
+    margin-top: 145px;
+}
+
+.bracketSection1BoxOuter {
+    width: 150px;
+    height: 50px;
+    border-width: 2px;
+    border-color: purple;
+    border-style: solid;
+    border-right: none;
+    margin-top: 100px;
+    margin-right: 30px;
+}
+
+/* Section 2 */
+.bracketSection2Box {
+    width: 150px;
+    height: 220px;
+    border-width: 2px;
+    border-color: purple;
+    border-style: solid;
+    border-left: none;
+    margin-top: 120px;
+}
+
+.bracketSection2Box:nth-child(2), .bracketSection2BoxOuter:nth-child(2) {
+    margin-top: 190px;
+}
+
+.bracketSection2BoxOuter {
+    width: 150px;
+    height: 220px;
+    border-width: 2px;
+    border-color: purple;
+    border-style: solid;
+    border-right: none;
+    margin-top: 120px;
+}
+
+/* Section 3 */
+.bracketSection3Box {
+    width: 150px;
+    height: 520px;
+    border-width: 2px;
+    border-color: purple;
+    border-style: solid;
+    border-left: none;
+    margin-top: 180px;
+}
+
+.bracketSection3BoxOuter {
+    width: 150px;
+    height: 520px;
+    border-width: 2px;
+    border-color: purple;
+    border-style: solid;
+    border-right: none;
+    margin-top: 180px;
+}
+
+/* Section 4 */
+.bracketSection4Box {
+    width: 150px;
+    border-width: 2px;
+    border-color: purple;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-top: 450px;
+}

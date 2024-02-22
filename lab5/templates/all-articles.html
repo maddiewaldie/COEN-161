@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-16" />
+    <link href="./static/styles/base.css" rel="stylesheet" />
+    <link href="./static/styles/all-articles.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="./static/scripts/all-articles.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="./index.html">Home </a>
+        </li>
+      </ul>
+    </nav>
+    <header id="top">
+      <div id="searched-tags"></div>
+      <input type="search" placeholder="Search" autocomplete="off" />
+    </header>
+    <main>
+      {{ ARTICLE_LISTING }}
+    </main>
+  </body>
+</html>

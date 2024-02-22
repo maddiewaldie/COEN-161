@@ -1,0 +1,181 @@
+/* General Formatting */
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #fff;
+    background-image: url("theItalianJob.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navigation Bar */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10px;
+    background-color:#111;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.netflixAvatar {
+    max-width: 1rem;
+    max-height: 1rem;
+}
+
+#leftSideNavBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftSideButtons {
+    padding-top: 1rem;
+}
+
+#rightSideNavBar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Top Movie Section */
+
+.movie-info-header {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 20px 50px;
+}
+
+#moviesText {
+    color: #716b6b;
+    margin-block-start: 5px;
+    margin-right: 5px;
+}
+
+#moviesCategoryText {
+    font-weight: bold;
+    font-size:x-large;
+    margin-block-start: 0px;
+}
+
+p {
+    max-width: 70ch;
+}
+
+.movie-banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    padding: 230px 0px 0px 30px;
+}
+
+.movie-background img {
+    width: 100%;
+}
+
+.movie-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.movie-info h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.movie-info p {
+    font-size: 16px;
+    line-height: 1.3rem;
+}
+
+.play-button, .more-info-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.more-info-button {
+    opacity: 0.7;
+}
+
+/* Bottom Scroll List of Movies */
+
+.movies {
+    padding: 20px 50px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.movie-container {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overflow: visible;
+    gap: 10px;
+}
+
+.movie-thumbnail {
+    flex: 0 0 200px;
+}
+
+.movie-thumbnail img {
+    width: 15rem;
+    height: 8rem;
+    object-fit: cover;
+}
+
+.movie-thumbnail:hover {
+    transform: scale(1.7);
+    transform-origin: center bottom;
+}

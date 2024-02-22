@@ -1,0 +1,103 @@
+body {
+  width: 100vw;
+  /** 
+    the first page won't have enough content to fit the entire screen
+    so force the height + don't let it overflow
+  */
+  height: 100vh;
+  overflow: hidden;
+
+  /** 
+    force both descendants into a single row with no wrapping since  
+    flex-flow: nowrap is the default
+  */
+  display: flex;
+}
+
+/**
+  students should get rid of the duplication between aside and main
+  in the final solution but make sure they use the > 
+*/
+body > * {
+  /** if students' content is overflowing, ask them to check the box-sizing */
+  box-sizing: border-box;
+  padding: 1rem;
+
+  display: flex;
+  flex: 0 0 50%;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+aside {
+  background: var(--accent-background);
+  color: var(--accent-background-text);
+  max-width: 35rem;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+aside h1 {
+  text-align: center;
+}
+
+img.profile {
+  width: 15rem;
+  height: 15rem;
+  /** this is what makes the image circular */
+  border-radius: 50%;
+}
+
+.logo {
+  height: 2rem;
+  width: 2rem;
+  padding: 0.5rem;
+}
+
+.logo:hover {
+  background: rgba(238, 238, 238, 0.5);
+}
+
+ul {
+  /** 
+    get rid of the bullets + lay out children in a line.
+    this can also be achieved by setting the display of
+    li to inline
+  */
+
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+
+  /** 
+    don't want this everywhere, but browsers have default styles
+    and one of the styles is adding padding (so bullets are indented). 
+    to discover this, have students: 
+
+    1) open the developer console
+    2) inspect the ul
+    3) look at the layout tab 
+    4) ask if there's something unexpectedly contributing space 
+    5) should be the padding
+  */
+
+  padding-left: 0;
+}
+
+ul > * {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+nav {
+  align-self: flex-end;
+  background-color: transparent;
+}
+
+article {
+  margin: auto;
+}

@@ -1,0 +1,39 @@
+main {
+  margin: auto;
+  max-width: min(80%, 80ch);
+}
+
+.highlight {
+  background-color: var(--accent-background);
+  color: var(--accent-background-text);
+  cursor: pointer;
+}
+
+article {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+article footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+article footer nav {
+  background-color: transparent;
+}
+
+article footer nav > * {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#previous-article::after {
+  margin-left: 0.5rem;
+  content: "⋅";
+}
+
+#next-article::before {
+  margin-right: 0.5rem;
+  content: "⋅";
+}

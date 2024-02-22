@@ -1,0 +1,58 @@
+main {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: auto;
+    margin: auto;
+    max-width: 75rem;
+}
+
+.article {
+    min-width: 10rem;
+    max-width: 25rem;
+}
+
+.article.hidden {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-inline-start: 2rem;
+    margin-inline-end: 2rem;
+    border-bottom: solid var(--accent-background);
+    border-width: 1.5px;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.header-right {
+    flex: 1;
+    text-align: right;
+}
+
+button.tag {
+    margin-right: 10px;
+}
+
+.tags {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tags li {
+    display: inline;
+}
+
+input[type="search"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 200px;
+}

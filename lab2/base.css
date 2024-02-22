@@ -1,0 +1,86 @@
+main {
+    font-family: var(--accent-text);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--accent-background);
+    font-family: var(--accent-text);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: var(--gray);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.tags {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    height: 2rem;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li button {
+    margin-right: 1rem;
+}
+
+body {
+    --accent-background: #8c6c9d;
+    --accent-background-text: #333;
+    --accent-text: "Helvetica", "Arial", sans-serif;;
+    --gray: #eee;
+    --dark-gray: #ccc;
+    --darkest-gray: #aaa;
+    --black: #333;
+
+    color: var(--black);
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: var(--accent-background);
+    margin: 0.25rem 0rem;
+}
+
+time {
+    color: var(--darkest-gray);
+}
+
+a { 
+    text-decoration: none;
+    color: var(--accent-background);
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--gray);
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: var(--dark-gray);
+}
+
+button .img {
+    height: 2rem;
+    width: 2rem;
+}

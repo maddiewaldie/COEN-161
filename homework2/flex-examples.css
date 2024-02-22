@@ -1,0 +1,114 @@
+/* Stretch All Pattern */
+.container-stretch-all {
+    display: flex;
+    background-color: rgb(157, 199, 235);
+    padding: 2%;
+}
+
+.item-stretch-all {
+    flex-grow: 1;
+    height: 100px;
+    background-color: rgb(10, 108, 160);
+}
+
+.item-stretch-all + .item-stretch-all {
+    margin-left: 2%;
+}
+
+/* Stretch Middle Pattern */
+.container-stretch-middle {
+    display: flex;
+    background-color: rgb(157, 199, 235);
+}
+
+.item-stretch-middle {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(10, 108, 160);
+    margin: 2%;
+}
+
+.item-stretch-middle-center { 
+    flex-grow: 1;
+    background-color: rgb(10, 108, 160);
+    margin: 2%;
+}
+
+.item-stretch-middle + .item-stretch-middle { 
+    margin-left: 2%; 
+}
+
+/* Alternating Grid */
+.container-alternating-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(157, 199, 235);
+    padding: 2%;
+}
+
+.item-alternating-grid {
+    width: 48%;
+    height: 100px;
+    margin-bottom: 2%;
+    background-color: rgb(10, 108, 160);
+}
+
+.item-alternating-grid:nth-child(3n) {
+    width: 100%;
+}
+
+/* Vertical Stack Pattern */
+.container-vertical-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(157, 199, 235);
+}
+
+.item-vertical-stack {
+    width: 400px;
+    height: 40px;
+    padding: 2%;
+    margin: 2%;
+    background-color: rgb(10, 108, 160);
+}
+
+/* Masonry Pattern */
+.container-masonry {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    height: 580px;
+    background-color: rgb(157, 199, 235);
+}
+
+.item-masonry {
+    width: 28%;
+    margin-bottom: 2%;
+    background-color: rgb(10, 108, 160);
+    margin: 2%;
+}
+
+.item-masonry:nth-child(3n+1) { 
+    order: 1; 
+    height: 100px;
+}
+
+.item-masonry:nth-child(3n+2) { 
+    order: 2; 
+    height: 75px;
+}
+
+.item-masonry:nth-child(3n) { 
+    order: 3; 
+    height: 100px;
+}
+
+.container-masonry::before,
+.container-masonry::after {
+    content: "";
+    flex-basis: 100%;
+    width: 0;
+    order: 2;
+}

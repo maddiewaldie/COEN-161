@@ -1,0 +1,48 @@
+header {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--accent-background);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+input[type="search"] {
+  border-radius: 8px;
+  background-color: white;
+  border: 2px solid var(--dark-gray);
+  padding: 0.5rem 1rem;
+}
+
+main {
+  display: flex;
+  /**
+    make sure students don't create a grid like structure
+    it should use flexbox. The wrap is what turns the
+    flex container 2d
+  */
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+article {
+  flex: 0 0 30%;
+  min-width: 30ch;
+  max-width: 50ch;
+}
+
+article h1 a {
+  color: var(--accent-background);
+}
+
+article.hidden {
+  display: none;
+}
+
+button.tag {
+  padding: 0.5rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}

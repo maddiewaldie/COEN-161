@@ -1,0 +1,47 @@
+<!-- Homework 1: The goal of this page is to explore the different HTML attributes and get comfortable reading documentation about HTML elements. -->
+<html>
+    <body>
+        <h1>Homework 1</h1>
+        <a href="./index.html">Back to index.html</a>
+        <h2>Attributes Page</h2>
+
+        <!-- [3] Create a list of 3 elements that are numbered as 4, 10, 18. -->
+        <h3> Exercise 1</h3>
+        <p>Create a list of 3 elements that are numbered as 4, 10, 18.</p>
+        <ol>
+            <li value="4">Element 4</li>
+            <li value="10">Element 10</li>
+            <li value="18">Element 18</li>
+        </ol>
+
+        <!-- [3] Create a link to a heading on another page that opens in a new browsing context (tab).Wikipedia is a good place to link to. -->
+        <h3> Exercise 2</h3>
+        <p>Create a link to a heading on another page that opens in a new browsing context (tab).</p>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Mint_chocolate_chip#History" target="_blank">Link to the history of mint chocolate chip ice cream.</a></li>
+        </ul>
+
+        <!-- [2] Create a numeric input with the name cheetos. This input should be focused when a user loads the page. Reference -->
+        <h3>Exercise 3</h3>
+        <p>Create a numeric input with the name cheetos. This input should be focused when a user loads the page.</p>
+        <input type="number" name="cheetos" autofocus/>
+
+        <!-- [5] Create an input that shows an autocomplete list of the 5 ice cream flavors. This will require two elements linked with an attribute  -->
+        <h3>Exercise 4</h3>
+        <p>Create an input that shows an autocomplete list of 5 ice cream flavors.</p>
+        <label for="iceCreamFlavor">Select an Ice Cream Flavor:</label>
+        <input type="text" id="iceCreamFlavor" list="iceCreamFlavors" name="iceCreamFlavor">
+        <datalist id="iceCreamFlavors">
+            <option value="Vanilla">
+            <option value="Chocolate">
+            <option value="Cookie Dough">
+            <option value="Mint Chocolate Chip">
+            <option value="Cookies and Cream">
+        </datalist>
+
+        <!-- [3] Create a button that is disabled and has a data-error attribute with value "Not allowed" and the class "error" -->
+        <h3>Exercise 5</h3>
+        <p>Create a button that is disabled and has a data-error attribute with value "Not allowed" and the class "error".</p>
+        <button class="error" disabled data-error="Not allowed">Button</button>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+main {
+    max-width: 100ch;
+    margin: auto;
+}
+
+.highlight {
+    background-color: var(--accent-background);
+}
+
+#article {
+    margin: 1rem 0rem;
+}
+
+#topHeader {
+    margin: 1rem 0rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+ul.tags li button a {
+    color: var(--black)
+}
+
+.footer-right {
+    display: flex;
+    gap: 10px;
+    order: 1;
+}
+
+footer .footer-right a:first-child, footer .footer-right a:nth-child(2), footer .footer-right a:nth-child(3), footer .footer-right a:nth-child(4){
+    color: var(--darkest-gray);
+}

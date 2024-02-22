@@ -1,0 +1,140 @@
+::root {
+  /** makes calculations easier. everything's in increments of 10 */
+  font-size: 10px;
+}
+
+body {
+  /** define custom properties so we can reference and change styles easily */
+  --accent-background: #54a0ff;
+  --accent-background-text: #073164;
+  --accent-text: #2e86de;
+  --gray: #eee;
+  --dark-gray: #ccc;
+  --darkest-gray: #aaa;
+  --black: #333;
+
+  color: var(--black);
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+  article headers
+*/
+
+article header {
+  align-self: flex-start;
+}
+
+article header h1 {
+  color: var(--accent-background-text);
+}
+
+article header > * {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+article header time {
+  color: var(--darkest-gray);
+}
+
+/**
+  unordered list
+*/
+
+ul.tags {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  padding-left: 0;
+}
+
+ul.tags li {
+  border-radius: 0.4rem;
+  background-color: var(--gray);
+  padding: 0.1rem 0.5rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+ul.tags li:first-child {
+  margin-left: 0;
+}
+
+ul.tags li:last-child {
+  margin-right: 0;
+}
+
+ul.tags a {
+  color: var(--darkest-gray);
+}
+
+/**
+  button
+*/
+
+button {
+  cursor: pointer;
+  background-color: var(--gray);
+  border: 0;
+  border-radius: 4px;
+  padding: 0.1rem 0.5rem;
+}
+
+button:hover {
+  background-color: var(--dark-gray);
+}
+
+button:active {
+  background-color: var(--darkest-gray);
+}
+
+button.img {
+  width: 2rem;
+  height: 2rem;
+}
+
+/**
+  links / anchor
+*/
+
+a {
+  text-decoration: none;
+}
+
+a.secondary {
+  color: var(--darkest-gray);
+}
+
+a.primary {
+  color: var(--accent-text);
+}
+
+/**
+  navigation
+*/
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--accent-background);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul a {
+  color: var(--accent-background-text);
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
